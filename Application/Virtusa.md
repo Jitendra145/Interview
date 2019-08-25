@@ -23,6 +23,17 @@
     }
     }
   ```
+  Ans: Compile time type== is the declared type of variable (decides eligible methods to called); RunTime type==type of object variable is pointing to
+  
+  Eg. A obj = new B();// Here compile time type of obj == A and runtime type of object is B;
+  
+   **A obj = new B();// compile time type = A and runtime type = B;** this declaration makes all the methods of A elligible for calling but compiler will not find bar() method during compilation as it is not the method of class A. Hence, ob.bar()--> failed to compile
+  
+  if below eclarion is possible
+  
+  **So B ob = new A(); compile time type= B and runtime type = A; **B ob ==> all the methods of B elligible for calling but at runtime ob will be pointing to object of A, and a dont't have all the methods of B so it will create runtime error.
+   
+  
   5. Java is pass by value or pass by refernce example.
   6. How memory is allocated while creating an object.
   7. Top most class of Exception class.
