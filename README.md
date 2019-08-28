@@ -37,3 +37,5 @@ class Ideone
 	}
 }
 ```
+### Java Stack and Heap: Java Memory Allocation
+https://www.guru99.com/java-stack-heap.html
