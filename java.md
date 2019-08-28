@@ -27,4 +27,7 @@ class Ideone
 	at Ideone.main(Main.java:14)**
 
 https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
+
 https://www.geeksforgeeks.org/java-memory-management/
+
+https://www.geeksforgeeks.org/classloader-in-java/
