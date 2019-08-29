@@ -1,5 +1,6 @@
 1. What is Memory Leak? Give an example.
-Ans. If an application creates lots of objects and does not use them then Garbage Collector can't destroy those objects. As These objects have 
+
+**Ans.** If an application creates lots of objects and does not use them then Garbage Collector can't destroy those objects. As These objects have 
 valid reference. Such type of useless objects are called **Memory Leak**.
 
 **Note:** If allocated memory goes beyond limit then program will terminated with **OutOfMemoryError**
