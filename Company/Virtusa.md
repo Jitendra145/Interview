@@ -3,6 +3,32 @@
 1. classnotfoundexception vs noclassdeffounderror
 2. Design Pattern in Spring
 3. Difference between create an object with new keywork vs Spring is creating object using xml configuration
+
+**Ans:** If you create object using new keyword you can't use the spring feature such as Autowiring,dependency injection. For e.g.
+
+```
+class A{
+  B b;
+  public void setB(B b){
+  this.b = b;
+  }
+}
+```
+
+Here class A contains class B. So whenever we are going to create object of class A we need to manually create the object of B.
+
+```
+class A{
+  @Autowired
+  B b;
+  public void setB(B b){
+  this.b = b;
+  }
+}
+```
+
+And when we are using spring, we can use annotation or setter/constructor based injection to inject the object of B. 
+
 4. What is the output of below code
 ```
   class A{
