@@ -99,11 +99,11 @@ Now, if a view name is returned, the view resolving strategy works in the follow
 XmlViewResolver --> ResourceBundleViewResolver --> InternalResourceViewResolver
 ```
 
-**Note:
+**Note:**
 
 The InternalResourceViewResolver must always assign with the **lowest priority (largest order number)**, because it will resolve the view no matter what view name is returned. It caused other view resolvers have no chance to resolve the view if they have lower priority.
 
-Q. What do you mean by Spring Singleton Scope?
+## What do you mean by Spring Singleton Scope?
 
 A. tell me what the output of the following program would be."
 
@@ -179,6 +179,10 @@ You can think of a Spring container as managing a key-value pair, where the key 
 
 In summation, Spring guarantees exactly one shared bean instance for the given id per IoC container, unlike Java Singletons, where the Singleton hardcodes the scope of an object such that one and only one instance of a particular class will ever be created per ClassLoader.
 
+## Where should I put @Transactional annotation: at an interface definition or at an implementing class?
+
+Spring recommends that you only annotate concrete classes (and methods of concrete classes) with the @Transactional annotation, as opposed to annotating interfaces. You certainly can place the @Transactional annotation on an interface (or an interface method), but this works only as you would expect it to if you are using interface-based proxies. The fact that Java annotations are not inherited from interfaces means that if you are using class-based proxies (proxy-target-class="true") or the weaving-based aspect (mode="aspectj"), then the transaction settings are not recognized by the proxying and weaving infrastructure, and the object will not be wrapped in a transactional proxy, which would be decidedly bad.
+https://stackoverflow.com/questions/3120143/where-should-i-put-transactional-annotation-at-an-interface-definition-or-at-a
 
 
 
