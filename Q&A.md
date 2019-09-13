@@ -165,7 +165,7 @@ https://www.tutorialspoint.com/design_pattern/singleton_pattern.htm
 Ans:Java is always pass-by-value. Unfortunately, when we pass the value of an object, we are passing the reference to it. This is confusing to beginners.
 
 It goes like this:
-
+```
 public static void main(String[] args) {
     Dog aDog = new Dog("Max");
     Dog oldDog = aDog;
@@ -184,6 +184,8 @@ public static void foo(Dog d) {
     d = new Dog("Fifi");
     d.getName().equals("Fifi"); // true
 }
+```
+
 In the example above aDog.getName() will still return "Max". The value aDog within main is not changed in the function foo with the Dog "Fifi" as the object reference is passed by value. If it were passed by reference, then the aDog.getName() in main would return "Fifi" after the call to foo.
 
 https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
