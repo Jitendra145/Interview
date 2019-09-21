@@ -263,5 +263,12 @@ Basically, EAR files are a superset containing WAR files and JAR files. Java App
 In application servers, EAR files contain configurations such as application security role mapping, EJB reference mapping and context root URL mapping of web modules.
 
 Apart from Web modules and EJB modules, EAR files can also contain connector modules packaged as RAR files and Client modules packaged as JAR files.
+
+48- Can I use HTTP PUT to create resource?
+Ans- It's quite possible, valid and even preferred in some occasions, to use PUT to create resources, or use POST to update resources. Use PUT when you can update a resource completely through a specific resource.
+
+restcookbook.com › HTTP Methods › put-vs-post
+
+https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request
                 
   
