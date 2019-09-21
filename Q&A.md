@@ -270,5 +270,11 @@ Ans- It's quite possible, valid and even preferred in some occasions, to use PUT
 restcookbook.com › HTTP Methods › put-vs-post
 
 https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request
+
+49. Monolithic vs Microservice artitecture?
+Ans-
+
+50- Marshelling vs Unmarshelling
+Ans-
                 
   
