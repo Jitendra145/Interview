@@ -212,16 +212,56 @@ Ans:
 overriding->rntime
 overloading->compiletime
 35-Difference between web server and application server
+
 36-what is default constructor  
+
 37-what are oops concepts  
+
 38-Whats are runtime exceptions and exceptions
+
 39-Transative dependency,Cyclic dependency  
+
 40-Hibbernate mapping, 
+
 41-Spring Boot
+
 42-arraylist vs linkedList
+
 43- Fail fast vs Fail safe
 
 44- memory management?
 Ans- https://www.geeksforgeeks.org/java-memory-management/
+
+45- In which folder projects are hosted/deployed in tomcat/Jboss?
+Ans- **Tomcat-->** webApp folder
+     **JBoss-->** JBoss installation directory at standalone/deployments
+
+46- Clean vs build in maven
+Ans- 
+
+47- EAR vs WAR vs JAR
+Ans- 
+In J2EE application, modules are packaged as EAR, JAR and WAR based on their functionality
+
+JAR: EJB modules which contain enterprise java beans (class files) and EJB deployment descriptor are packed as JAR files with .jar extenstion
+
+WAR: Web modules which contain Servlet class files, JSP Files, supporting files, GIF and HTML files are packaged as JAR file with .war (web archive) extension
+
+EAR: All above files (.jar and .war) are packaged as JAR file with .ear (enterprise archive) extension and deployed into Application Server.
+
+
+A WAR (Web Archive) is a module that gets loaded into a Web container of a Java Application Server. A Java Application Server has two containers (runtime environments) - one is a Web container and the other is a EJB container.
+
+The Web container hosts Web applications based on JSP or the Servlets API - designed specifically for web request handling - so more of a request/response style of distributed computing. A Web container requires the Web module to be packaged as a WAR file - that is a special JAR file with a web.xml file in the WEB-INF folder.
+
+An EJB container hosts Enterprise java beans based on the EJB API designed to provide extended business functionality such as declarative transactions, declarative method level security and multiprotocol support - so more of an RPC style of distributed computing. EJB containers require EJB modules to be packaged as JAR files - these have an ejb-jar.xml file in the META-INF folder.
+
+Enterprise applications may consist of one or more modules that can either be Web modules (packaged as a WAR file), EJB modules (packaged as a JAR file), or both of them. Enterprise applications are packaged as EAR files ― these are special JAR files containing an application.xml file in the META-INF folder.
+
+Basically, EAR files are a superset containing WAR files and JAR files. Java Application Servers allow deployment of standalone web modules in a WAR file, though internally, they create EAR files as a wrapper around WAR files. Standalone web containers such as Tomcat and Jetty do not support EAR files ― these are not full-fledged Application servers. Web applications in these containers are to be deployed as WAR files only.
+
+In application servers, EAR files contain configurations such as application security role mapping, EJB reference mapping and context root URL mapping of web modules.
+
+Apart from Web modules and EJB modules, EAR files can also contain connector modules packaged as RAR files and Client modules packaged as JAR files.
                 
   
