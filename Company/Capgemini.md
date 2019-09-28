@@ -12,3 +12,4 @@
 12. Write Architecture/Teckstack/ you responsibility/module you worked on?
 13. Aware about Security used in your app?
 14. Type of annotation used?
+15. Use of Abstarct class and interface?
