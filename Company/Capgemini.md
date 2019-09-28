@@ -10,3 +10,5 @@
 10. DI?
 11. What are ypu telling know it well?
 12. Write Architecture/Teckstack/ you responsibility/module you worked on?
+13. Aware about Security used in your app?
+14. Type of annotation used?
