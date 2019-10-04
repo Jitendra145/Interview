@@ -8,8 +8,8 @@
 8. ConcurrentModificationException?
 9. Autowired byType byname?
 10. DI?
-11. What are ypu telling know it well?
-12. Write Architecture/Teckstack/ you responsibility/module you worked on?
+11. What are you telling know it well?
+12. Write Architecture/Techstack/ your responsibility/module you worked on?
 13. Aware about Security used in your app?
 14. Type of annotation used?
 15. Use of Abstarct class and interface?
