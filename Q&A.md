@@ -272,9 +272,35 @@ restcookbook.com › HTTP Methods › put-vs-post
 https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request
 
 49. Monolithic vs Microservice artitecture?
+
 Ans-
 
 50- Marshelling vs Unmarshelling
+
 Ans-
+
+51. What will be output?
+```
+class Test{
+void foo(int a,long b){
+}
+void foo(long a,int b){
+}
+
+public static void main(String args[]){
+ Test obj = new Test();
+ obj.foo(10,10);
+}
+```
+Compilation error #stdin compilation error #stdout 0s 0KB
+Main.java:20: error: reference to foo is ambiguous
+		o.foo(1,1);
+		 ^
+  both method foo(int,long) in Ideone and method foo(long,int) in Ideone match
+1 error
+
+
+}
+Test obj = new Test
                 
   
