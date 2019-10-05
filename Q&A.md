@@ -293,14 +293,36 @@ public static void main(String args[]){
 }
 ```
 Compilation error #stdin compilation error #stdout 0s 0KB
+
 Main.java:20: error: reference to foo is ambiguous
+
 		o.foo(1,1);
 		 ^
   both method foo(int,long) in Ideone and method foo(long,int) in Ideone match
+  
 1 error
 
+52. What is Marker Interface?
 
-}
-Test obj = new Test
+Ans- Marker Interface in java is an interface with no fields or methods within it. It is used to convey to the JVM that the class implementing an interface of this category will have some special behavior. Hence, an empty interface in java is called a marker interface.
+
+Examples of marker interface are a Serializable, Clonnable and Remote interface. All these interfaces are empty interfaces. Cloneable interface: Cloneable interface is present in java.lang package. There is a method clone() in an Object class.
+
+53. Some methods of Object class?
+
+Ans. https://www.geeksforgeeks.org/object-class-in-java/
+
+54. What is Polymorphism?
+
+Ans. 
+
+55. Object level vs class level lock?
+
+Ans. https://www.geeksforgeeks.org/object-level-class-level-lock-java/
+
+
+
+
+
                 
   
