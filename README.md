@@ -39,3 +39,6 @@ class Ideone
 ```
 ### Java Stack and Heap: Java Memory Allocation
 https://www.guru99.com/java-stack-heap.html
+
+### https://howtodoinjava.com/interview-questions/real-java-interview-questions-asked-for-oracle-enterprise-manager-project/
+### https://howtodoinjava.com/interview-questions/java-interview-questions-for-mid-level-developers/
