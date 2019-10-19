@@ -6,4 +6,5 @@
 | HCL | 2nd Round pending  |Easy |
 | Capgemini | 1st Round Out  |Easy |
 | Incedo | Selected  |Easy |
+| Capgemini | 2nd round not attended  |Easy |
 | RNBTC | Waiting |Easy |
