@@ -185,4 +185,78 @@ Spring recommends that you only annotate concrete classes (and methods of concre
 https://stackoverflow.com/questions/3120143/where-should-i-put-transactional-annotation-at-an-interface-definition-or-at-a
 
 
+## Output
+```
+/* package whatever; // don't place package name! */
 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class A implements Runnable{
+	public void run(){
+		try{
+		B.obj.notify();
+		}catch(Exception e){
+			
+		}
+	}
+}
+class B implements Runnable{
+	static B obj;
+	int data = 10;
+	public void run(){
+		obj = new B();
+		try{
+		obj.wait();
+		}catch(Exception e){
+			
+		}
+		obj.data+=20;
+		System.out.println(obj.data);
+	}
+}
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		A obj = new A();
+		B ob = new B();
+		Thread t1 = new Thread(obj);
+		Thread t2 = new Thread(ob);
+		t1.start();
+		t2.start();
+		System.out.printf('"GFG-"');
+	}
+}
+```
+
+```
+\\line1
+try{
+\\\line3
+}
+catch(Exception e){
+\\line 6
+}
+finally{
+}
+```
+When the finally block will not execute?
+1. exception thrown at line1
+2. exception thrown at line3
+3. exception thrown at line6
+
+**Que:** Change in Perm gen in java 8
+
+**Ans:** PermGen space is replaced by MetaSpace in Java 8. 
+
+**Que:** autodetect 
+
+**Ans:** Spring Autowiring by AutoDetect. In Spring, “Autowiring by AutoDetect“, means chooses “autowire by constructor” if default constructor (argument with any data type), otherwise uses “autowire by type“
+
+https://www.mkyong.com/spring/spring-autowiring-by-autodetect/
+
+**Qus:** method in which thread object in passed
