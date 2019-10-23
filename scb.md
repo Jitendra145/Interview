@@ -54,3 +54,65 @@ https://stackoverflow.com/questions/34587254/accessing-multiple-controllers-with
 https://stackoverflow.com/questions/3898442/spring-mvc-mapping-multiple-urls-to-same-controller
 
 https://springframework.guru/spring-requestmapping-annotation/
+
+
+## Symantec
+
+1. How to return value from Thread?
+2. If we having multiple Thread then how will you return value?
+3. Have you heard about callable interface?
+4. Have you heard about Cloneable interface?
+5. Have you used Hash map? Is Hash map Thread safe?
+6. How to get thread safe version of HashMap?
+7. What is Concurrent Hash map?
+8. What is size of concurrent hash map size?
+9. Explain hash map internal implementation?
+10. How you insert data in hashmap?
+11. Have you created custom immutable class?
+12. Have you created singleton pattern?
+13. How will you implement singleton class?
+14. What is the different between SOAP and REST?
+15. How will you implement versioning in rest API?
+
+https://www.springboottutorial.com/spring-boot-versioning-for-rest-services
+
+Asked about Agile method, how scrum works, how stories defines, how sprint defines and how to provide estimation.
+
+What is HTTP protocol?
+
+What is Docker and how does it work?
+
+## Sapient
+1. Design Elevator system? Define class structure and how will you use Queue?
+2. What is the different between Abstraction and Encapsulation?
+3. What are the different kinds of polymorphism?
+4. What is Overriding and overloading in polymorphism?
+5. What is Runtime and Compile time polymorphism?
+6. What is inheritance?
+7. Have you worked on some design patterns?
+8. What is singleton design pattern?
+9. Where have you used factory and abstract factory design pattern?
+10. What is the best use of factory pattern? Why you are using Factory with DAO layer class.
+11. What is the Exception hierarchy?
+12. Is there any thing like compile time exception?
+13. How will you create your custom checked exception?
+14. How will you create custom unchecked exception class?
+15. Have you worked on any immutable class? What is the concept the immutability? 
+16. How to create immutable class?
+17. What is cloning?
+18. What is Shallow and Deep cloning?
+19. What is serialization?How to achieve serialization?
+20. How serialization works? What is the logic in behind it?
+21. you are going to serialize class of employee class having property?
+22. What are enums? Why enum needed? 
+23. Is enum singleton?
+24. How will you know Exception has been thrown from any thread you executed?
+25. Do you know about garbage collection? Do you know how garbage algorithm works?
+26. What is different algorithm JVM is using for garbage collection?
+27. There is abstract class which can provide the definition of method, so what is the use of interface?
+28. Do you know method references? Its a part of java 8.
+
+
+
+
+
