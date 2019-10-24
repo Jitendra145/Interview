@@ -1,10 +1,59 @@
-HashMap Vs. ConcurrentHashMap Vs. SynchronizedMap
+**HashMap Vs. ConcurrentHashMap Vs. SynchronizedMap**
+**Ans:**
+**HashMap**
+1. HashMap is non-Synchronized in nature i.e. HashMap is not Thread-safe whereas ConcurrentHashMap is Thread-safe in nature.
+2. HashMap performance is relatively high because it is non-synchronized in nature and any number of threads can perform simultaneously. But ConcurrentHashMap performance is low sometimes because sometimes Threads are required to wait on ConcurrentHashMap.
+3. While one thread is Iterating the HashMap object, if other thread try to add/modify the contents of Object then we will get Run-time exception saying ConcurrentModificationException.Whereas In ConcurrentHashMap we wont get any exception while performing any modification at the time of Iteration.
 
--hashcode vs equals in java
+2)You can make HashMap synchronized by wrapping it on Collections.synchornizedMap(HashMap) which will return a collection which is almost equivalent to Hashtable, where every modification operation on Map is locked on Map object while in case of ConcurrentHashMap, thread-safety is achieved by dividing whole Map into different partition based upon Concurrency level and only locking particular portion instead of locking the whole Map.
 
--hashcode rule with jpa
+Difference between ConcurrentHashMap and HashMap in Java Collection3) ConcurrentHashMap is more scalable and performs better than Synchronized HashMap in the multi-threaded environment while in Single threaded environment both HashMap and ConcurrentHashMap gives comparable performance, where HashMap only slightly better.
 
--oracle cluster index vs non-cluster index
+
+In Summary Main difference between ConcurrentHashMap and HashMap in Java Collection turns out to be thread-safety, Scalability, and Synchronization. ConcurrentHashMap is a better choice than synchronized HashMap if you are using them as cache, which is the most popular use case of a Map in Java application. ConcurrentHashMap is more scalable and outperforms when a number of reader threads outnumber the number of writer threads.
+
+
+**ConcurrentHashMap**
+1. You should use ConcurrentHashMap when you need very high concurrency in your project.
+2. It is thread safe without synchronizing the whole map.
+3. Reads can happen very fast while write is done with a lock.
+4. There is no locking at the object level.
+5. The locking is at a much finer granularity at a hashmap bucket level.
+6. ConcurrentHashMap doesn’t throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
+7. ConcurrentHashMap uses multitude of locks.
+
+**SynchronizedHashMap**
+1. Synchronization at Object level.
+2. Every read/write operation needs to acquire lock.
+3. Locking the entire collection is a performance overhead.
+4. This essentially gives access to only one thread to the entire map & blocks all the other threads.
+5. It may cause contention.
+6. SynchronizedHashMap returns Iterator, which fails-fast on concurrent modification.
+
+https://crunchify.com/hashmap-vs-concurrenthashmap-vs-synchronizedmap-how-a-hashmap-can-be-synchronized-in-java/
+
+
+**-hashcode vs equals in java**
+
+**-hashcode rule with jpa**
+**Is the default implementation of hashcode()/equals() good enough for most cases?**
+https://stackoverflow.com/questions/1638723/how-should-equals-and-hashcode-be-implemented-when-using-jpa-and-hibernate
+The answer is yes, in most cases it is.
+
+You only need to override equals() and hashcode() if the entity will be used in a Set (which is very common) AND the entity will be detached from, and subsequently re-attached to, hibernate sessions (which is an uncommon usage of hibernate).
+
+using the JPA entity business key(e.g. a unique combination of attributes that is not going to change during object (or, at least, session) lifetime) for equals and hashCode is always best choice. However, not all entities feature a unique business key, so we need to use another database column that is also unique, as the primary key.
+
+https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
+
+https://stackoverflow.com/questions/39100383/why-to-override-hashcode-and-equals-methods-in-hibernate-persistence-class?noredirect=1&lq=1
+
+**-oracle cluster index vs non-cluster index**
+Clustered and Non-clustered index are the types of single-level ordering index where clustered index determines how the data is stored in the rows of a table. On the other hand, the non-clustered index stores the data at a single place and the indexes are stored at another place
+
+Non-clustered index creates a logical order for data rows and uses pointers to physical data files. The clustered index physically sort all data rows. The non-clustered index does not sort rows physically. There can be only one clustered index on the table
+
+There can be only one clustered index per table. However, you can create multiple non-clustered indexes on a single table. Clustered indexes only sort tables. Therefore, they do not consume extra storage. Non-clustered indexes are stored in a separate place from the actual table claiming more storage space
 
 -plsql equals null vs is null (careful here, when interviewer says orally "equals" he means "=")
 
@@ -14,13 +63,22 @@ HashMap Vs. ConcurrentHashMap Vs. SynchronizedMap
 
 For a client/server software architecture, what are the solutions for good user experience with slow client connection
 
-# Skype Id
+# Skype Question
 1. Explain about your project?
 2. Java 8 and its feature?
 3. diffrence between java 6 and java 8
 4. Singleton class
 5. Create singlton class
 6. What if two thread acces singleton class
+
+**Ans:**
+
+It can be used in a single threaded environment because multiple threads can break singleton property because they can access get instance method simultaneously and create multiple objects
+
+Using synchronized we can create singleton class in multi-threading environment also but it can cause slow performance, so we can use Double check locking mechanism.
+
+https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
+
 7. How to create thread
 8. What is executor framework?
 9. How to define no of thread in executor framework?
