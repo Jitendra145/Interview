@@ -22,4 +22,15 @@
 ## oracle
 Implement a hash table, Binary search 2D  
 
+## Advance concept
+
+19. Volatile Keyword
+
+Ans: https://www.geeksforgeeks.org/volatile-keyword-in-java/
+
+20. Atomic Variable
+
+Ans: https://www.baeldung.com/java-atomic-variables
+
+
 
