@@ -3,7 +3,7 @@
 |   Virtusa| 3rd Round out |Easy|
 | Altimatix  | 2nd Round out  |Moderate |
 | Equiniti | Selected  |Easy |
-| HCL | 2nd Round pending  |Easy |
+| HCL | Selected  |Easy |
 | Capgemini | 1st Round Out  |Easy |
 | Incedo | Selected  |Easy |
 | Capgemini | 2nd round not attended  |Easy |
